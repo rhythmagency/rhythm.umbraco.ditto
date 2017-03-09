@@ -38,6 +38,12 @@
                 ? JsonConvert.DeserializeObject<dynamic>(Value as string)
                 : Value;
 
+            // JSON is null?
+            if (json == null)
+            {
+                return Enumerable.Empty<string>();
+            }
+
             // Convert to list of strings, and return.
             foreach (var nodeId in json)
             {
