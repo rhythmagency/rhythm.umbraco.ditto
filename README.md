@@ -21,6 +21,7 @@ Here are the available Ditto processors:
 * **ParseJsonPickedNodesAttribute** Parses JSON containing picked content node ID's. Assumes a string of this format: `["1", "2", "3"]`. Returns `IEnumerable<string>`.
 * **ReplaceYearAttribute** Replaces "{year}" with the current year in a string. Returns `string`.
 * **SanitizeForCssAttribute** Sanitizes a string so it can be used as a CSS class. Returns `string`.
+* **UndeferCollectionAttribute** Converts a collection to a list (useful to avoid deferred execution side effects).
 
 The following code sample shows how to use both `ParseJsonPickedNodesAttribute` and `DittoFirstItemAttribute`:
 

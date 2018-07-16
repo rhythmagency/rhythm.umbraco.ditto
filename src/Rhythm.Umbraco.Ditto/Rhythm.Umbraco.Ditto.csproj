@@ -160,9 +160,8 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Rhythm.Core, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rhythm.Core.1.1.1\lib\net452\Rhythm.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Rhythm.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rhythm.Core.1.5.0\lib\net452\Rhythm.Core.dll</HintPath>
     </Reference>
     <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
@@ -290,6 +289,7 @@
     <Compile Include="Processors\DittoFirstItemAttribute.cs" />
     <Compile Include="Processors\NearestAncestorAttribute.cs" />
     <Compile Include="Processors\SanitizeForCssAttribute.cs" />
+    <Compile Include="Processors\UndeferCollectionAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
