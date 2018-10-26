@@ -24,6 +24,10 @@
         /// </returns>
         public override object ProcessValue()
         {
+            if (this.Value == null)
+            {
+                return null;
+            }
             var list = CollectionExtensionMethods.AsList(this.Value as dynamic);
             return list;
         }
